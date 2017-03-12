@@ -13,7 +13,7 @@ const MODELS = (() => {
     })
 
     return {
-      update: (val) => value += val,
+      update: (val) => (value += val),
       value: () => value
     }
   })(0)
@@ -30,7 +30,7 @@ const MODELS = (() => {
     })
 
     return {
-      update: (val) => value += val,
+      update: (val) => (value += val),
       value: () => value
     }
   })(10)
