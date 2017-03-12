@@ -1,5 +1,5 @@
 # FLUX-Sampler
-##A UI pattern inspired by the Facebook FLUX model
+##A UI Sampler inspired by the Facebook FLUX pattern
 
 In this sampler I have developed a UI model inspired by the Facebook FLUX pattern. This consists of the following components:
 
