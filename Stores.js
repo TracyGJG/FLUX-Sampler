@@ -1,4 +1,4 @@
-const MODELS = (() => {
+const STORES = (() => {
   let objSubscribedViews = {}
 
   // Model: Counter One
@@ -7,15 +7,10 @@ const MODELS = (() => {
 
     DISPATCHER.subscribe((message, data) => {
       if (message === 'counter1') {
-        counter1.update(data)
-        objSubscribedViews.counter1(counter1.value())
+        value += data
+        objSubscribedViews.counter1(value)
       }
     })
-
-    return {
-      update: (val) => (value += val),
-      value: () => value
-    }
   })(0)
 
   // Model: Counter Two
@@ -24,15 +19,10 @@ const MODELS = (() => {
 
     DISPATCHER.subscribe((message, data) => {
       if (message === 'counter2') {
-        counter2.update(data)
-        objSubscribedViews.counter2(counter2.value())
+        value += data
+        objSubscribedViews.counter2(value)
       }
     })
-
-    return {
-      update: (val) => (value += val),
-      value: () => value
-    }
   })(10)
 
   return {

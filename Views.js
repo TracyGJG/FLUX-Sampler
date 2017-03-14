@@ -1,10 +1,10 @@
 const VIEWS = (() => {
 
   // Views
-  MODELS.subscribe( 'counter1', (val) => {
-    domDiv = document.querySelector('div').textContent = val
+  STORES.subscribe('counter1', (val) => {
+    document.querySelector('div').textContent = val
   })
-  MODELS.subscribe( 'counter2', (val) => {
+  STORES.subscribe('counter2', (val) => {
     document.querySelector('span').textContent = val
   })
 

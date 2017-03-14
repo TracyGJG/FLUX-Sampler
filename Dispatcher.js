@@ -7,7 +7,7 @@ const DISPATCHER = (() => {
     },
     post: (message, data) => {
       arrSubscribers.forEach((
-        (msg, dat) => ((fn) => fn(msg, dat))
+        (msg, dat) => (fn) => fn(msg, dat)
       )(message, data))
     }
   }
